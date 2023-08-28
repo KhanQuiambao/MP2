@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NANUD QUIAMBAO</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- styles  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- HEADER  -->
+    <header>
+        <!-- NAV  -->
+        <div class="nav container-fluid shopping">
+            <h1 class="logo text-dark font">JITENSHA</h1>
+            <!-- CART ICON  -->
+            <div class="cart-icon-container">
+                <i class='bx bx-shopping-bag text-dark' id="cart-icon"></i>
+                <a id="cart-count" class="quantity">0</a>
+            </div>
+
+            <!-- CART  -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content">
+
+
+                </div>
+
+                <!-- TOTAL   -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <button type="button" class="btn-buy" id="buy-button">Buy Now</button>
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        </div>
+    </header>
+
+    <!--Home-->
+    <section class="home">
+          <img src="img/bird1." id="bird1">
+          <img src="img/bird2." id="bird2">
+          <h2 id="text"><span>Let's Ride</span></h2>
+          <img src="img/forest.png" id="forest">
+          <a href="#categories" class="btn btn-primary" id="btn">Shop Now</a>
+          <img src="img/rocks.png" id="rocks">
+          <img src="assets/img/bikes/bike2.png" alt="" id="bike">
+          <img src="img/water.png" id="water">
+    </section>
+
+    <!--Mountain Bike-->
+    <section class="sea">
+
+    <!--Categories start-->
+    <div class="container-fluid bg-light p-5" id="categories">
+        <div class="row">
+            <h1 class="m-auto mb-5">Categories</h1>
+            <div class="col-3 btn"><img src="assets/img/bikes/bestlogi.jpg" alt="" class="rounded-circle"><h4 id="best">Best Sellers</h4></div>
+            <div class="col-3 btn"><img src="assets/img/cruz/cruzlogi.jpg" alt="" class="rounded-circle"><h4>Santa Cruz Bikes</h4></div>
+            <div class="col-3 btn"><img src="assets/img/evil/evillogi.jpg" alt="" class="rounded-circle"><h4>Evil Bikes</h4></div>
+            <div class="col-3 btn"><img src="assets/img/nuke/nukelogi.jpg" alt="" class="rounded-circle"><h4>Nuke Proof Bikes</h4></div>
+        </div>
+    </div>
+    
+    <!--Categories end-->
+    <div class="container-fluid bg-light p-5 ">
+        <div class="row">
+            <div class="col-12">
+                <hr>
+            </div>
+        </div>
+        <br>
+    </div>
+
+        <div class="container-fluid bg-light p-5">
+            <div class="row">
+                <div class="col-6">
+                    <h1 id="mountain">Mountain Bikes</h1>
+                    <p>At Bike Shop X, We specialise in quality. With bikes from top brands such as Santa Cruz,Evil and NukeProof you can guarantee finding a good bike for your style and budget.If you're unsure or just want some friendly advice then our team can help you find the mountain bike that is most suited to your type of riding. Get in touch and we'll be happy to help.</p>
+
+                </div>
+                <div class="col-6">
+                    <img src="assets/img/bikes/mountainbike.jpg" alt="">
+                </div>
+
+            </div>
+            <br>
+        </div>
+        <div class="shop container-fluid bg-light mt-0">
+            <h2 class="section-title">Best Sellers</h2>
+                <!-- CONTENT  -->
+            <div class="shop-content">
+                    <!-- BOX 1 -->
+                <div class="product-box">
+                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <!--<p><b>Category:</b> Trail</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 130mm</p>
+                    <p><b>Back:</b> 121mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$8828.94</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 2 -->
+                <div class="product-box">
+                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> Enduro/Bikepark</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 180mm</p>
+                    <p><b>Back:</b> 170mm</p>
+                    <p><b>Warranty:</b> 5 Years (Frame)</p>-->
+                    <span class="product-price"><b>$8196.90</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 3 -->
+                <div class="product-box">
+                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> XC</p>
+                    <p><b>Material:</b> Carbon CC</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 100mm</p>
+                    <p><b>Back:</b> 100mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$10848.47</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+            </div>
+        </div>
+        <!--Best seller end-->
+        <div class="container-fluid bg-light p-5 ">
+            <div class="row">
+                <div class="col-12">
+                    <hr>
+                </div>
+            </div>
+            <br>
+        </div>
+        <!--Santa Cruz Bike-->
+        <div class="container-fluid bg-light p-5 ">
+            <div class="row">
+                <div class="col-6">
+                    <h1>Santa Cruz Bikes</h1>
+                    <p>California is home to Santa Cruz Bikes, a true MTB heavyweight - manufacturers and designers of some of the planet's finest trail shredders. Models such as the Nomad, Bronson, Tallboy, 5010, Hightower and Megatower are all top of class in terms of performance and quality. Santa Cruz eBikes including the Bullit and Heckler are leading the surge in electric bike growth.</p>
+
+                </div>
+                <div class="col-6 text-end">
+                    <img src="assets/img/cruz/cruzlogi.jpg" alt="" style="width: 50%;">
+                </div>
+
+            </div>
+            <br>
+        </div>
+        <div class="shop container-fluid bg-light mt-0">
+            <!-- CONTENT  -->
+            <div class="shop-content">
+                <!-- BOX 1 -->
+                <div class="product-box">
+                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <!--<p><b>Category:</b> Trail</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 130mm</p>
+                    <p><b>Back:</b> 121mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$8828.94</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 2 -->
+                <div class="product-box">
+                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> Enduro/Bikepark</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 180mm</p>
+                    <p><b>Back:</b> 170mm</p>
+                    <p><b>Warranty:</b> 5 Years (Frame)</p>-->
+                    <span class="product-price"><b>$8196.90</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 3 -->
+                <div class="product-box">
+                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> XC</p>
+                    <p><b>Material:</b> Carbon CC</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 100mm</p>
+                    <p><b>Back:</b> 100mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$10848.47</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!--Box 4-->
+                <div class="product-box">
+                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <!--<p><b>Category:</b> Trail</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 130mm</p>
+                    <p><b>Back:</b> 121mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$8828.94</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 5 -->
+                <div class="product-box">
+                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> Enduro/Bikepark</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 180mm</p>
+                    <p><b>Back:</b> 170mm</p>
+                    <p><b>Warranty:</b> 5 Years (Frame)</p>-->
+                    <span class="product-price"><b>$8196.90</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 6 -->
+                <div class="product-box">
+                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> XC</p>
+                    <p><b>Material:</b> Carbon CC</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 100mm</p>
+                    <p><b>Back:</b> 100mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$10848.47</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!--Box 7-->
+                <div class="product-box">
+                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <!--<p><b>Category:</b> Trail</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 130mm</p>
+                    <p><b>Back:</b> 121mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$8828.94</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 8 -->
+                <div class="product-box">
+                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> Enduro/Bikepark</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 180mm</p>
+                    <p><b>Back:</b> 170mm</p>
+                    <p><b>Warranty:</b> 5 Years (Frame)</p>-->
+                    <span class="product-price"><b>$8196.90</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 9 -->
+                <div class="product-box">
+                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> XC</p>
+                    <p><b>Material:</b> Carbon CC</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 100mm</p>
+                    <p><b>Back:</b> 100mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$10848.47</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                <!-- BOX 10 -->
+                <div class="product-box">
+                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> XC</p>
+                    <p><b>Material:</b> Carbon CC</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 100mm</p>
+                    <p><b>Back:</b> 100mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$10848.47</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+            </div>
+        </div>
+        <!--Santa Cruz end-->
+        <div class="container-fluid bg-light p-5 ">
+            <div class="row">
+                <div class="col-12">
+                    <hr>
+                </div>
+            </div>
+            <br>
+        </div>
+        <!--Evil Bike-->
+        <div class="container-fluid bg-light p-5 ">
+            <div class="row">
+                <div class="col-6">
+                    <h1>Evil Bikes</h1>
+                    <p>Seattle based Evil mountain bikes make some of the world's most awesome looking,  exciting, forward thinking bikes on the planet. All designed and built by true MTB obsessives - these bikes are made to rip like no other.  Biketart's range of Evil bikes and frames ticks the boxes for all hardcore mountain bikers and disciplines.</p>
+
+                </div>
+                <div class="col-6 text-end">
+                    <img src="assets/img/evil/evillogi.jpg" alt="" style="width: 50%;">
+                </div>
+
+            </div>
+            <br>
+        </div>
+        <div class="shop container-fluid bg-light mt-0">
+            <!-- CONTENT  -->
+            <div class="shop-content">
+                <!-- BOX 1 -->
+                <div class="product-box">
+                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <!--<p><b>Category:</b> Trail</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 130mm</p>
+                    <p><b>Back:</b> 121mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$8828.94</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 2 -->
+                <div class="product-box">
+                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> Enduro/Bikepark</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 180mm</p>
+                    <p><b>Back:</b> 170mm</p>
+                    <p><b>Warranty:</b> 5 Years (Frame)</p>-->
+                    <span class="product-price"><b>$8196.90</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 3 -->
+                <div class="product-box">
+                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> XC</p>
+                    <p><b>Material:</b> Carbon CC</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 100mm</p>
+                    <p><b>Back:</b> 100mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$10848.47</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!--Box 4-->
+                <div class="product-box">
+                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <!--<p><b>Category:</b> Trail</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 130mm</p>
+                    <p><b>Back:</b> 121mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$8828.94</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 5 -->
+                <div class="product-box">
+                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> Enduro/Bikepark</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 180mm</p>
+                    <p><b>Back:</b> 170mm</p>
+                    <p><b>Warranty:</b> 5 Years (Frame)</p>-->
+                    <span class="product-price"><b>$8196.90</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 6 -->
+                <div class="product-box">
+                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> XC</p>
+                    <p><b>Material:</b> Carbon CC</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 100mm</p>
+                    <p><b>Back:</b> 100mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$10848.47</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!--Box 7-->
+                <div class="product-box">
+                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <!--<p><b>Category:</b> Trail</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 130mm</p>
+                    <p><b>Back:</b> 121mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$8828.94</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 8 -->
+                <div class="product-box">
+                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> Enduro/Bikepark</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 180mm</p>
+                    <p><b>Back:</b> 170mm</p>
+                    <p><b>Warranty:</b> 5 Years (Frame)</p>-->
+                    <span class="product-price"><b>$8196.90</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 9 -->
+                <div class="product-box">
+                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> XC</p>
+                    <p><b>Material:</b> Carbon CC</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 100mm</p>
+                    <p><b>Back:</b> 100mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$10848.47</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                <!-- BOX 10 -->
+                <div class="product-box">
+                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> XC</p>
+                    <p><b>Material:</b> Carbon CC</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 100mm</p>
+                    <p><b>Back:</b> 100mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$10848.47</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+            </div>
+        </div>
+        
+        <!--evil end-->
+        <div class="container-fluid bg-light p-5 ">
+            <div class="row">
+                <div class="col-12">
+                    <hr>
+                </div>
+            </div>
+            <br>
+        </div>
+        <!--Nuke Bike-->
+        <div class="container-fluid bg-light p-5 ">
+            <div class="row">
+                <div class="col-6">
+                    <h1>Nuke Proof Bikes</h1>
+                    <p>At Bike Shop X, we specialise in quality. With bikes from top brands such as Santa Cruz,Evil and NukeProof you can guarantee finding a good bike for your style and budget.If you're unsure or just want some friendly advice then our team can help you find the mountain bike that is most suited to your type of riding. Get in touch and we'll be happy to help.</p>
+
+                </div>
+                <div class="col-6 text-end">
+                    <img src="assets/img/nuke/nukelogi.jpg" alt="" style="width: 50%;">
+                </div>
+
+            </div>
+            <br>
+        </div>
+        <div class="shop container-fluid bg-light mt-0">
+            <!-- CONTENT  -->
+            <div class="shop-content">
+                <!-- BOX 1 -->
+                <div class="product-box">
+                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <!--<p><b>Category:</b> Trail</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 130mm</p>
+                    <p><b>Back:</b> 121mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$8828.94</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 2 -->
+                <div class="product-box">
+                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> Enduro/Bikepark</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 180mm</p>
+                    <p><b>Back:</b> 170mm</p>
+                    <p><b>Warranty:</b> 5 Years (Frame)</p>-->
+                    <span class="product-price"><b>$8196.90</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 3 -->
+                <div class="product-box">
+                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> XC</p>
+                    <p><b>Material:</b> Carbon CC</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 100mm</p>
+                    <p><b>Back:</b> 100mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$10848.47</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!--Box 4-->
+                <div class="product-box">
+                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <!--<p><b>Category:</b> Trail</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 130mm</p>
+                    <p><b>Back:</b> 121mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$8828.94</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 5 -->
+                <div class="product-box">
+                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> Enduro/Bikepark</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 180mm</p>
+                    <p><b>Back:</b> 170mm</p>
+                    <p><b>Warranty:</b> 5 Years (Frame)</p>-->
+                    <span class="product-price"><b>$8196.90</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 6 -->
+                <div class="product-box">
+                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> XC</p>
+                    <p><b>Material:</b> Carbon CC</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 100mm</p>
+                    <p><b>Back:</b> 100mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$10848.47</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!--Box 7-->
+                <div class="product-box">
+                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <!--<p><b>Category:</b> Trail</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 130mm</p>
+                    <p><b>Back:</b> 121mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$8828.94</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 8 -->
+                <div class="product-box">
+                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> Enduro/Bikepark</p>
+                    <p><b>Material:</b> Carbon</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 180mm</p>
+                    <p><b>Back:</b> 170mm</p>
+                    <p><b>Warranty:</b> 5 Years (Frame)</p>-->
+                    <span class="product-price"><b>$8196.90</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                    <!-- BOX 9 -->
+                <div class="product-box">
+                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> XC</p>
+                    <p><b>Material:</b> Carbon CC</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 100mm</p>
+                    <p><b>Back:</b> 100mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$10848.47</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+                <!-- BOX 10 -->
+                <div class="product-box">
+                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                    <div class="small-ratings">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                    <h5><b>Details:</b></h5>
+                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <!--<p><b>Category:</b> XC</p>
+                    <p><b>Material:</b> Carbon CC</p>
+                    <p><b>Wheel:</b> 29"</p>
+                    <p><b>Front:</b> 100mm</p>
+                    <p><b>Back:</b> 100mm</p>
+                    <p><b>Warranty:</b> Lifetime (Frame)</p>-->
+                    <span class="product-price"><b>$10848.47</b></span>
+                    <i class='btn btn-primary add-cart'>Add to <i class="fa-solid fa-cart-shopping"></i></i>
+                </div>
+            </div>
+        </div>
+        
+        <!--Nuke end-->
+        <div class="container-fluid bg-white p-5 ">
+            <div class="row">
+                <div class="col-12">
+                    <hr>
+                </div>
+            </div>
+            <br>
+        </div>
+        <!--start of comment section-->
+        <div class="container-fluid mt-0 p-5 bg-light">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <form action="">
+                        <label for="Comments" class="h4"><b>Leave a comment:</b></label>
+                        <textarea name="comments"  class="form-control" rows="5"></textarea>
+                        <br>
+                        <input type="submit" class="btn btn-primary w-10">
+                    </form>              
+                </div>
+            </div>
+        </div>
+        <!--end of comment section-->
+        <!-- about us, contact us, follow us-->
+        <div class="container-fluid bg-light p-5">
+            <div class="row">
+                <div class="col-6 text-center">
+                    <h4>Contact Us:</h3>
+                        <p>Email 1: qhankuiambao0420@gmail.com</p>
+                        <p>Email 2: nathannanud@gmail.com</p>
+                        <p>Mobile: +639959781486</p>
+                </div>
+                <div class="col-6 text-center">
+                    <h4>Follow Us:</h3>
+                    <a href="#" target="_blank" rel="noopener no-referrer" class="btn btn-outline-none"light><i class="fa-brands fa-facebook h2 text-primary"></i></a>
+                    <a href="#" target="_blank" rel="noopener no-referrer" class="btn btn-outline-none"><i class="fa-brands fa-youtube h2 text-danger"></i></a>
+                    <a href="#" target="_blank" rel="noopener no-referrer" class="btn btn-outline-none"><i class="fa-brands fa-twitter h2 text-info"></i></a>
+                    <a href="#" target="_blank" rel="noopener no-referrer" class="btn btn-outline-none"> <i class="fa-brands fa-tiktok h2 text-dark"> </i></a>    
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <!-- about us, contact us, follow us-->
+    </section> 
+
+    <!--start of footer-->
+    <div class="container-fluid text-white p-3 darkblue text-center footer">
+        <hr>
+        <h5>© 2023 - BIKE <b><span class="xxx">XXX</span></b>. All Rights Reserved / Created by: <i>Team QuiaNud</i></h5>
+        <p>Hotline: 911</p>
+        </div>   
+    <!--end of footer-->
+        
+</body>
+<script src="assets/js/main.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u
+</html>
