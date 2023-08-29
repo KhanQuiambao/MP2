@@ -114,6 +114,7 @@ function handle_changeItemQuantity() {
 
 function handle_buyOrder() {
   if (itemsAdded.length <= 0) {
+    
     return;
   }
   const cartContent = cart.querySelector(".cart-content");
@@ -168,7 +169,7 @@ const buyButton = document.querySelector(".btn-buy");
 const cartContent = document.querySelector(".cart-content");
 
 
-const subpageURL = "checkout.html"; 
+const subpageURL = "checkoutnew.html"; 
 
 
 buyButton.addEventListener("click", function() {

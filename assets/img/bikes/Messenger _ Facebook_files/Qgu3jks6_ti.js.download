@@ -1,0 +1,5 @@
+;/*FB_PKG_DELIM*/
+
+__d("CometMarketplaceBanContentContainerQuery_facebookRelayOperation",[],(function(a,b,c,d,e,f){e.exports="6846447458740871"}),null);
+__d("CometMarketplaceBanContentContainerQuery$Parameters",["CometMarketplaceBanContentContainerQuery_facebookRelayOperation"],(function(a,b,c,d,e,f){"use strict";a={kind:"PreloadableConcreteRequest",params:{id:b("CometMarketplaceBanContentContainerQuery_facebookRelayOperation"),metadata:{},name:"CometMarketplaceBanContentContainerQuery",operationKind:"query",text:null}};e.exports=a}),null);
+__d("MarketplaceBanContentContainer.entrypoint",["CometMarketplaceBanContentContainerQuery$Parameters","JSResourceForInteraction","WebPixelRatio"],(function(a,b,c,d,e,f,g){"use strict";a={getPreloadProps:function(){return{queries:{banContentContainerReference:{environmentProviderOptions:{ssrBoundary:"feed"},parameters:b("CometMarketplaceBanContentContainerQuery$Parameters"),variables:{scale:d("WebPixelRatio").get()}}}}},root:c("JSResourceForInteraction")("CometMarketplaceBanContentContainer.react").__setRef("MarketplaceBanContentContainer.entrypoint")};g["default"]=a}),98);

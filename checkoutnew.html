@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- styles  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body style="background-color:  white">
+    <!-- HEADER  -->
+    <header>
+        <!-- NAV  -->
+        <div class="nav container-fluid shopping">
+            <h1 class="logo text-dark font">JITENSHA</h1>
+            <!-- CART ICON  -->
+            <div class="cart-icon-container">
+                <i class='bx bx-shopping-bag text-dark' id="cart-icon"></i>
+                <a id="cart-count" class="quantity">0</a>
+            </div>
+
+            <!-- CART  -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content">
+
+
+                </div>
+
+                <!-- TOTAL   -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <button type="button" class="btn-buy" id="buy-button">Buy Now</button>
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <!--Check out body-->
+    <div class="container chckout">
+        <div class="row">
+            <div class="col-3">
+                &nbsp
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Thank You for Your Purchase!</h5>
+                        <p class="card-text">Your order has been successfully placed.</p>
+                        <p class="card-text"><strong>Order Number:</strong> 12345</p>
+                        <p class="card-text"><strong>Shipping Address:</strong> 1234 Elm Street, City, Country</p>
+                        <a href="index.html"class="btn btn-dark">Shop Again</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                &nbsp
+            </div>
+        </div>
+    </div>
+    
+
+    <!--start of footer-->
+    <div class="container-fluid text-white p-3 darkblue text-center footer footercheck">
+        <hr>
+        <h5>© 2023 - <b class="font">JITENSHA</b>. All Rights Reserved / Created by: <i>Team QuiaNud</i></h5>
+        <p>Hotline: 911</p>
+    </div>   
+    <!--end of footer-->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>

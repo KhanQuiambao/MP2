@@ -499,6 +499,10 @@ body{
     background: #094b65;
 }
 
+.bg{
+    background: #094b65;
+}
+
 #bike{
     width: 15%;
     height: auto;
@@ -545,4 +549,18 @@ body{
 }
  .xxx{
     color: red;
+ }
+
+
+ /*check out ################################*/
+ .checkbutton{
+    text-align: center;
+ }
+
+ .footercheck{
+    margin-top: 10.4%;
+ }
+
+ .chckout{
+    margin-top: 6%;
  }
