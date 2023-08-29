@@ -1,4 +1,0 @@
-;/*FB_PKG_DELIM*/
-
-__d("MetaConfig",["invariant","BanzaiLazyQueue","ExecutionEnvironment","MetaConfigMap"],(function(a,b,c,d,e,f,g,h){"use strict";var i={};a={_:function(a){var b=c("MetaConfigMap").get(a);b!=null||h(0,57910,a);var e=b.value;b=b.log_id;i[a]!==!0&&(c("ExecutionEnvironment").isInBrowser&&d("BanzaiLazyQueue").queuePost("metaconfig_exposure",{identifier:a,log_id:b}),i[a]=!0);return e}};b=a;g["default"]=b}),98);
-__d("CurrentMessengerUser",["CurrentEnvironment","CurrentUser"],(function(a,b,c,d,e,f,g){"use strict";function a(){return c("CurrentEnvironment").instagramdotcom?c("CurrentUser").getEIMU():c("CurrentUser").getID()}function b(){return c("CurrentUser").getPageMessagingMailboxId()}g.getIDorEIMU=a;g.getPageMessagingMailboxId=b}),98);

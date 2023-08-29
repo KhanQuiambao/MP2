@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NANUD QUIAMBAO</title>
+    <title>JiTENSHA</title>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'><link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,17 +12,24 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- styles  -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- HEADER  -->
     <header>
         <!-- NAV  -->
-        <div class="nav container-fluid shopping">
-            <h1 class="logo text-dark font">JITENSHA</h1>
+        <div class="nav container-fluid shopping p-2">
+            <h1 class="logo text-dark font"><b>JiTENSHA</b></h1>
+            <!--<button id="toggle-theme">Toggle Theme</button>-->
+            <a href="racing.html" class="btn btn-outline-none"><h1><i class="fa-solid fa-gamepad"></i></h1></a>
+
+
             <!-- CART ICON  -->
-            <div class="cart-icon-container">
-                <i class='bx bx-shopping-bag text-dark' id="cart-icon"></i>
-                <a id="cart-count" class="quantity">0</a>
+            <div class="cart-icon-container cartcart text-center store">
+                <i id="cart-icon"><img src="assets/css/shopping.svg"></i>
+                <span id="cart-count" class="quantity">0</span>
             </div>
 
             <!-- CART  -->
@@ -49,43 +56,51 @@
     </header>
 
     <!--Home-->
-    <section class="home">
-          <img src="img/bird1." id="bird1">
-          <img src="img/bird2." id="bird2">
-          <h2 id="text"><span>Let's Ride</span></h2>
+    <div class="container-fluid wall">
+        <div class="row">
+            <div class="col-12 col-md-12 col-ld-12 text-center shopnow">
+                <!--<a href="#categories" class="btn btn-danger text-center rounded-pill p-2"><h1 class="font">Shop Now</h1></a>--> 
+                <a href="#categories" class="button font">Shop Now</a>
+            </div>
+        </div>
+    </div>
+    <!--<section class="home">
+          <img src="#" id="bird1">
+          <img src="#" id="bird2">
+          <h2 id="text"><span>Bike is Life</span></h2>
           <img src="img/forest.png" id="forest">
           <a href="#categories" class="btn btn-primary" id="btn">Shop Now</a>
           <img src="img/rocks.png" id="rocks">
           <img src="assets/img/bikes/bike2.png" alt="" id="bike">
           <img src="img/water.png" id="water">
-    </section>
+    </section>-->
 
     <!--Mountain Bike-->
-    <section class="sea">
+    <section>
 
     <!--Categories start-->
-    <div class="container-fluid bg-light p-5" id="categories">
+    <div class="container bg-light p-5" id="categories">
         <div class="row">
-            <h1 class="m-auto mb-5">Categories</h1>
-            <div class="col-3 btn">
+            <h1 class="m-auto mb-5 text-center">Categories</h1>
+            <div class="col-12 col-md-6 col-lg-3 btn">
                 <a href="#best">
                     <img src="assets/img/bikes/bestlogi.jpg" alt="" class="rounded-circle w-75">
                 </a>
                 <h5>Best Sellers</h5>
             </div>
-            <div class="col-3 btn">
+            <div class="col-12 col-md-6 col-lg-3 btn">
                 <a href="#santa">
                     <img src="assets/img/cruz/cruzlogi.jpg" alt="" class="rounded-circle w-75">
                 </a>
                 <h5>Santa Cruz Bikes</h5>
             </div>
-            <div class="col-3 btn">
+            <div class="col-12 col-md-6 col-lg-3 btn">
                 <a href="#evil">
                     <img src="assets/img/evil/evillogi.jpg" alt="" class="rounded-circle w-75">
                 </a>
                 <h5>Evil Bikes</h5>    
             </div>
-            <div class="col-3 btn">
+            <div class="col-12 col-md-6 col-lg-3 btn">
                 <a href="#nuke">
                    <img src="assets/img/nuke/nukelogi.jpg" alt="" class="rounded-circle w-75">
                 </a>
@@ -93,37 +108,36 @@
             </div>
         </div>
     </div>
-    
     <!--Categories end-->
-    <div class="container-fluid bg-light p-5 ">
+    <div class="container bg-light p-5 ">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-md-12 col-lg-12">
                 <hr>
             </div>
         </div>
         <br>
     </div>
 
-        <div class="container-fluid bg-light p-5">
+        <div class="container bg-light p-5">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6 col-lg-6">
                     <h1 id="mountain">Mountain Bikes</h1>
                     <p>At Bike Shop X, We specialise in quality. With bikes from top brands such as Santa Cruz,Evil and NukeProof you can guarantee finding a good bike for your style and budget.If you're unsure or just want some friendly advice then our team can help you find the mountain bike that is most suited to your type of riding. Get in touch and we'll be happy to help.</p>
 
                 </div>
-                <div class="col-6" id="best">
+                <div class="col-12 col-md-6 col-lg-6" id="best">
                     <img src="assets/img/bikes/mountainbike.jpg" alt="">
                 </div>
 
             </div>
             <br>
         </div>
-        <div class="shop container-fluid bg-light mt-0">
+        <div class="shop container bg-light mt-0">
             <h2 class="section-title">Best Sellers</h2>
                 <!-- CONTENT  -->
             <div class="row p-2">
                     <!-- BOX 1 -->
-                <div class=" col-4 card h-100 product-box">
+                <div class="col-12 col-md-4 col-lg-4 card h-100 product-box">
                     <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
                     <h2 class="product-title text-dark">Evil Following LS</h2>
                     <div class="small-ratings">
@@ -142,10 +156,12 @@
                     <p><b>Back:</b> 121mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
                     <span class="product-price">$8828.94</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!-- BOX 2 -->
-                <div class="col-4 card product-box">
+                <div class="col-12 col-md-4 col-lg-4 card h-100 product-box">
                     <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
                     <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
                     <div class="small-ratings">
@@ -164,10 +180,12 @@
                     <p><b>Back:</b> 170mm</p>
                     <p><b>Warranty:</b> 5 Years (Frame)</p>-->
                     <span class="product-price">$8828.94</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!-- BOX 3 -->
-                <div class="col-4 card product-box">
+                <div class="col-12 col-md-4 col-lg-4 card h-100 product-box">
                     <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
                     <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
                     <div class="small-ratings">
@@ -186,116 +204,124 @@
                     <p><b>Back:</b> 100mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
                     <span class="product-price">$8828.94</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
             </div>
         </div>
         <!--Best seller end-->
-        <div class="container-fluid bg-light p-5 ">
+        <div class="container bg-light p-5 ">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-md-12 col-lg-12">
                     <hr>
                 </div>
             </div>
             <br>
         </div>
         <!--Santa Cruz Bike-->
-        <div class="container-fluid bg-light p-5 " id="santa">
+        <div class="container bg-light p-5 " id="santa">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6 col-lg-6">
                     <h1>Santa Cruz Bikes</h1>
                     <p>California is home to Santa Cruz Bikes, a true MTB heavyweight - manufacturers and designers of some of the planet's finest trail shredders. Models such as the Nomad, Bronson, Tallboy, 5010, Hightower and Megatower are all top of class in terms of performance and quality. Santa Cruz eBikes including the Bullit and Heckler are leading the surge in electric bike growth.</p>
 
                 </div>
-                <div class="col-6 text-end">
-                    <img src="assets/img/cruz/cruzlogi.jpg" alt="" style="width: 50%;">
+                <div class="col-12 col-md-6 col-lg-6 text-center">
+                    <img src="assets/img/cruz/cruzlogi.jpg" alt="" style="width: 65%;">
                 </div>
 
             </div>
             <br>
         </div>
-        <div class="shop container-fluid bg-light mt-0">
+        <div class="shop container bg-light mt-0">
             <!-- CONTENT  -->
             <div class="row p-2">
                 <!-- BOX 1 -->
-                <div class=" col-3 card product-box">
-                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Heckler 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star "></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <p>Category: Enduro, Material: Carbon C, Wheel: 29", Front: 160mm, Back: 150mm, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> Trail</p>
                     <p><b>Material:</b> Carbon</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 130mm</p>
                     <p><b>Back:</b> 121mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$7315.33</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!-- BOX 2 -->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa2.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Bronson CC 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <p>Category: Enduro, Material: Carbon CC, Wheel: MX, Front: 160mm, Back: 150mm, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> Enduro/Bikepark</p>
                     <p><b>Material:</b> Carbon</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 180mm</p>
                     <p><b>Back:</b> 170mm</p>
                     <p><b>Warranty:</b> 5 Years (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$7061.07</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!-- BOX 3 -->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa3.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Bronson C 2022</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <p>Category: Enduro, Material: Carbon C, Wheel: MX", Front: 160mm, Back: 150mm, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> XC</p>
                     <p><b>Material:</b> Carbon CC</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 100mm</p>
                     <p><b>Back:</b> 100mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$4918.00</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!--Box 4-->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa4.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Highball C 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <p>Category: XC, Material: Carbon C, Wheel: 29", Front: 100mm, Back: Hardtail, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> XC</p>
                     <p><b>Material:</b> Carbon CC</p>
                     <p><b>Wheel:</b> 29"</p>
@@ -303,12 +329,14 @@
                     <p><b>Back:</b> 100mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
                     <span class="product-price">$8828.94</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!--Box 5-->
-                <div class=" col-3 card product-box">
-                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa5.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Bronson C 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
@@ -317,48 +345,52 @@
                         <i class="fa fa-star rating-color"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <p>Category: Enduro, Material: Carbon C, Wheel: MX, Front: 160mm, Back: 150mm, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> Trail</p>
                     <p><b>Material:</b> Carbon</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 130mm</p>
                     <p><b>Back:</b> 121mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$4786.80</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!-- BOX 6 -->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa6.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Chameleon Alloy 2022</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <p>Category: Trail, Material: Aluminum, Wheel: 29", Front: 130mm, Back: Hardtail, Warranty: 5 Years (Frame)</p>
                     <!--<p><b>Category:</b> Enduro/Bikepark</p>
                     <p><b>Material:</b> Carbon</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 180mm</p>
                     <p><b>Back:</b> 170mm</p>
                     <p><b>Warranty:</b> 5 Years (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$2642.40</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!-- BOX 7 -->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa7.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Megatower Carbon CC 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <h5><b>Details:</b></h5>
                     <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
@@ -368,13 +400,15 @@
                     <p><b>Front:</b> 100mm</p>
                     <p><b>Back:</b> 100mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$7181.75</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!--Box 8-->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa8.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz 5010 Carbon CC 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
@@ -383,124 +417,132 @@
                         <i class="fa fa-star rating-color"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <p>Category: Trail, Material: Carbon CC, Wheel: MX, Front: 140mm, Back: 130mm, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> XC</p>
                     <p><b>Material:</b> Carbon CC</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 100mm</p>
                     <p><b>Back:</b> 100mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$6425.29</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
             </div>
         </div>
         <!--Santa Cruz end-->
-        <div class="container-fluid bg-light p-5 ">
+        <div class="container bg-light p-5 ">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-md-12 col-lg-12">
                     <hr>
                 </div>
             </div>
             <br>
         </div>
         <!--Evil Bike-->
-        <div class="container-fluid bg-light p-5" id="evil">
+        <div class="container bg-light p-5" id="evil">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6 col-lg-6">
                     <h1>Evil Bikes</h1>
                     <p>Seattle based Evil mountain bikes make some of the world's most awesome looking,  exciting, forward thinking bikes on the planet. All designed and built by true MTB obsessives - these bikes are made to rip like no other.  Biketart's range of Evil bikes and frames ticks the boxes for all hardcore mountain bikers and disciplines.</p>
 
                 </div>
-                <div class="col-6 text-end">
-                    <img src="assets/img/evil/evillogi.jpg" alt="" style="width: 50%;">
+                <div class="col-12 col-md-6 col-lg-6 text-center">
+                    <img src="assets/img/evil/evillogi.jpg" alt="" style="width: 65%;">
                 </div>
 
             </div>
             <br>
         </div>
-        <div class="shop container-fluid bg-light mt-0">
+        <div class="shop container bg-light mt-0">
             <!-- CONTENT  -->
             <div class="row p-2">
                 <!-- BOX 1 -->
-                <div class=" col-3 card product-box">
-                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Heckler 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star "></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <p>Category: Enduro, Material: Carbon C, Wheel: 29", Front: 160mm, Back: 150mm, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> Trail</p>
                     <p><b>Material:</b> Carbon</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 130mm</p>
                     <p><b>Back:</b> 121mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$7315.33</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!-- BOX 2 -->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa2.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Bronson CC 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <p>Category: Enduro, Material: Carbon CC, Wheel: MX, Front: 160mm, Back: 150mm, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> Enduro/Bikepark</p>
                     <p><b>Material:</b> Carbon</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 180mm</p>
                     <p><b>Back:</b> 170mm</p>
                     <p><b>Warranty:</b> 5 Years (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$7061.07</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!-- BOX 3 -->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa3.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Bronson C 2022</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <p>Category: Enduro, Material: Carbon C, Wheel: MX", Front: 160mm, Back: 150mm, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> XC</p>
                     <p><b>Material:</b> Carbon CC</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 100mm</p>
                     <p><b>Back:</b> 100mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$4918.00</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!--Box 4-->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa4.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Highball C 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <p>Category: XC, Material: Carbon C, Wheel: 29", Front: 100mm, Back: Hardtail, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> XC</p>
                     <p><b>Material:</b> Carbon CC</p>
                     <p><b>Wheel:</b> 29"</p>
@@ -508,12 +550,14 @@
                     <p><b>Back:</b> 100mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
                     <span class="product-price">$8828.94</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!--Box 5-->
-                <div class=" col-3 card product-box">
-                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa5.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Bronson C 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
@@ -522,48 +566,52 @@
                         <i class="fa fa-star rating-color"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <p>Category: Enduro, Material: Carbon C, Wheel: MX, Front: 160mm, Back: 150mm, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> Trail</p>
                     <p><b>Material:</b> Carbon</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 130mm</p>
                     <p><b>Back:</b> 121mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$4786.80</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!-- BOX 6 -->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa6.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Chameleon Alloy 2022</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <p>Category: Trail, Material: Aluminum, Wheel: 29", Front: 130mm, Back: Hardtail, Warranty: 5 Years (Frame)</p>
                     <!--<p><b>Category:</b> Enduro/Bikepark</p>
                     <p><b>Material:</b> Carbon</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 180mm</p>
                     <p><b>Back:</b> 170mm</p>
                     <p><b>Warranty:</b> 5 Years (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$2642.40</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!-- BOX 7 -->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa7.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Megatower Carbon CC 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <h5><b>Details:</b></h5>
                     <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
@@ -573,13 +621,15 @@
                     <p><b>Front:</b> 100mm</p>
                     <p><b>Back:</b> 100mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$7181.75</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!--Box 8-->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa8.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz 5010 Carbon CC 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
@@ -588,125 +638,133 @@
                         <i class="fa fa-star rating-color"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <p>Category: Trail, Material: Carbon CC, Wheel: MX, Front: 140mm, Back: 130mm, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> XC</p>
                     <p><b>Material:</b> Carbon CC</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 100mm</p>
                     <p><b>Back:</b> 100mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$6425.29</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
             </div>
         </div>
         
         <!--evil end-->
-        <div class="container-fluid bg-light p-5 ">
+        <div class="container bg-light p-5 ">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-md-12 col-lg-12">
                     <hr>
                 </div>
             </div>
             <br>
         </div>
         <!--Nuke Bike-->
-        <div class="container-fluid bg-light p-5" id="nuke">
+        <div class="container bg-light p-5" id="nuke">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6 col-lg-6">
                     <h1>Nuke Proof Bikes</h1>
                     <p>At Bike Shop X, we specialise in quality. With bikes from top brands such as Santa Cruz,Evil and NukeProof you can guarantee finding a good bike for your style and budget.If you're unsure or just want some friendly advice then our team can help you find the mountain bike that is most suited to your type of riding. Get in touch and we'll be happy to help.</p>
 
                 </div>
-                <div class="col-6 text-end">
-                    <img src="assets/img/nuke/nukelogi.jpg" alt="" style="width: 50%;">
+                <div class="col-12 col-md-6 col-lg-6 text-center">
+                    <img src="assets/img/nuke/nukelogi.jpg" alt="" style="width: 65%;">
                 </div>
 
             </div>
             <br>
         </div>
-        <div class="shop container-fluid bg-light mt-0">
+        <div class="shop container bg-light mt-0">
             <!-- CONTENT  -->
             <div class="row p-2">
                 <!-- BOX 1 -->
-                <div class=" col-3 card product-box">
-                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa1.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Heckler 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star "></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <p>Category: Enduro, Material: Carbon C, Wheel: 29", Front: 160mm, Back: 150mm, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> Trail</p>
                     <p><b>Material:</b> Carbon</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 130mm</p>
                     <p><b>Back:</b> 121mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$7315.33</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!-- BOX 2 -->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa2.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Bronson CC 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <p>Category: Enduro, Material: Carbon CC, Wheel: MX, Front: 160mm, Back: 150mm, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> Enduro/Bikepark</p>
                     <p><b>Material:</b> Carbon</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 180mm</p>
                     <p><b>Back:</b> 170mm</p>
                     <p><b>Warranty:</b> 5 Years (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$7061.07</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!-- BOX 3 -->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa3.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Bronson C 2022</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <p>Category: Enduro, Material: Carbon C, Wheel: MX", Front: 160mm, Back: 150mm, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> XC</p>
                     <p><b>Material:</b> Carbon CC</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 100mm</p>
                     <p><b>Back:</b> 100mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$4918.00</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!--Box 4-->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa4.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Highball C 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <p>Category: XC, Material: Carbon C, Wheel: 29", Front: 100mm, Back: Hardtail, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> XC</p>
                     <p><b>Material:</b> Carbon CC</p>
                     <p><b>Wheel:</b> 29"</p>
@@ -714,12 +772,14 @@
                     <p><b>Back:</b> 100mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
                     <span class="product-price">$8828.94</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!--Box 5-->
-                <div class=" col-3 card product-box">
-                    <img src="assets/img/best/evil1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Evil Following LS</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa5.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Bronson C 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
@@ -728,48 +788,52 @@
                         <i class="fa fa-star rating-color"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: Trail X, Material: Carbon, Wheel: 29", Front: 130mm, Back: 121mm, Warranty: Lifetime (Frame)</p>
+                    <p>Category: Enduro, Material: Carbon C, Wheel: MX, Front: 160mm, Back: 150mm, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> Trail</p>
                     <p><b>Material:</b> Carbon</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 130mm</p>
                     <p><b>Back:</b> 121mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$4786.80</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!-- BOX 6 -->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/nuke1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Nukeproof Giga 290 RS</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa6.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Chameleon Alloy 2022</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: Enduro, Material: Carbon, Wheel: 29", Front: 180mm, Back: 170mm, Warranty: 5 Years (Frame)</p>
+                    <p>Category: Trail, Material: Aluminum, Wheel: 29", Front: 130mm, Back: Hardtail, Warranty: 5 Years (Frame)</p>
                     <!--<p><b>Category:</b> Enduro/Bikepark</p>
                     <p><b>Material:</b> Carbon</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 180mm</p>
                     <p><b>Back:</b> 170mm</p>
                     <p><b>Warranty:</b> 5 Years (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$2642.40</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!-- BOX 7 -->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa7.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz Megatower Carbon CC 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
                     </div>
                     <h5><b>Details:</b></h5>
                     <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
@@ -779,13 +843,15 @@
                     <p><b>Front:</b> 100mm</p>
                     <p><b>Back:</b> 100mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$7181.75</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
                     <!--Box 8-->
-                <div class="col-3 card product-box">
-                    <img src="assets/img/best/cruz1.jpg" alt="" class="product-img">
-                    <h2 class="product-title text-dark">Santa Cruz Blur Carbon CC</h2>
+                <div class="col-12 col-md-3 col-lg-3 card product-box">
+                    <img src="assets/img/cruz/santa8.jpg" alt="" class="product-img">
+                    <h2 class="product-title text-dark">Santa Cruz 5010 Carbon CC 2023</h2>
                     <div class="small-ratings">
                         <i class="fa fa-star rating-color"></i>
                         <i class="fa fa-star rating-color"></i>
@@ -794,30 +860,32 @@
                         <i class="fa fa-star rating-color"></i>
                     </div>
                     <h5><b>Details:</b></h5>
-                    <p>Category: XC, Material: Carbon CC, Wheel: 29", Front: 100mm, Back: 100mm, Warranty: 5 Years (Frame)</p>
+                    <p>Category: Trail, Material: Carbon CC, Wheel: MX, Front: 140mm, Back: 130mm, Warranty: Lifetime (Frame)</p>
                     <!--<p><b>Category:</b> XC</p>
                     <p><b>Material:</b> Carbon CC</p>
                     <p><b>Wheel:</b> 29"</p>
                     <p><b>Front:</b> 100mm</p>
                     <p><b>Back:</b> 100mm</p>
                     <p><b>Warranty:</b> Lifetime (Frame)</p>-->
-                    <span class="product-price">$8828.94</span>
+                    <span class="product-price">$6425.29</span>
+                    <br>
+                    <br>
                     <i class="btn btn-primary add-cart m-1">Add to <i class="fa-solid fa-cart-shopping"></i></i>
                 </div>
             </div>
         </div>
         
         <!--Nuke end-->
-        <div class="container-fluid bg-light p-5 ">
+        <div class="container bg-light p-5 ">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-md-12 col-lg-12">
                     <hr>
                 </div>
             </div>
             <br>
         </div>
         <!--start of comment section-->
-        <div class="container-fluid mt-0 p-5 bg-light">
+        <div class="container mt-0 p-5 bg-light">
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-12">
                     <form action="">
@@ -831,20 +899,21 @@
         </div>
         <!--end of comment section-->
         <!-- about us, contact us, follow us-->
-        <div class="container-fluid bg-light p-5">
+        <div class="container bg-light p-5">
             <div class="row">
-                <div class="col-6 text-center">
+                <div class="col-12 col-md-6 col-lg-6 text-center">
                     <h4>Contact Us:</h3>
                         <p>Email 1: qhankuiambao0420@gmail.com</p>
                         <p>Email 2: nathannanud@gmail.com</p>
                         <p>Mobile: +639959781486</p>
+                        <p>Address: Hermosa, Bataan 2111</p>
                 </div>
-                <div class="col-6 text-center">
+                <div class="col-12 col-md-6 col-lg-6 text-center">
                     <h4>Follow Us:</h3>
-                    <a href="#" target="_blank" rel="noopener no-referrer" class="btn btn-outline-none"light><i class="fa-brands fa-facebook h2 text-primary"></i></a>
-                    <a href="#" target="_blank" rel="noopener no-referrer" class="btn btn-outline-none"><i class="fa-brands fa-youtube h2 text-danger"></i></a>
-                    <a href="#" target="_blank" rel="noopener no-referrer" class="btn btn-outline-none"><i class="fa-brands fa-twitter h2 text-info"></i></a>
-                    <a href="#" target="_blank" rel="noopener no-referrer" class="btn btn-outline-none"> <i class="fa-brands fa-tiktok h2 text-dark"> </i></a>    
+                    <a href="https://www.biketart.com/" target="_blank" rel="noopener no-referrer" class="btn btn-outline-none"light><i class="fa-brands fa-facebook h2 text-primary"></i></a>
+                    <a href="https://www.biketart.com/" target="_blank" rel="noopener no-referrer" class="btn btn-outline-none"><i class="fa-brands fa-youtube h2 text-danger"></i></a>
+                    <a href="https://www.biketart.com/" target="_blank" rel="noopener no-referrer" class="btn btn-outline-none"><i class="fa-brands fa-twitter h2 text-info"></i></a>
+                    <a href="https://www.biketart.com/" target="_blank" rel="noopener no-referrer" class="btn btn-outline-none"> <i class="fa-brands fa-tiktok h2 text-dark"> </i></a>    
                     </h5>
                 </div>
             </div>
@@ -855,7 +924,7 @@
     <!--start of footer-->
     <div class="container-fluid text-white p-3 darkblue text-center footer">
         <hr>
-        <h5>© 2023 - <b class="font">JITENSHA</b>. All Rights Reserved / Created by: <i>Team QuiaNud</i></h5>
+        <h5>© 2023 - <b class="font">JiTENSHA</b>. All Rights Reserved / Created by: <i>Team QuiaNud</i></h5>
         <p>Hotline: 911</p>
     </div>   
     <!--end of footer-->

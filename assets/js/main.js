@@ -186,30 +186,48 @@ buyButton.addEventListener("click", function() {
 
 //############################################################################
 //paralax
-const text = document.getElementById('text');
-const bird1 = document.getElementById('bird1');
-const bike = document.getElementById('bike');
-const bird2 = document.getElementById('bird2');
-const forest = document.getElementById('forest');
-const btn = document.getElementById('btn');
-const rocks = document.getElementById('rocks');
-const header = document.getElementById('header');
+  // const text = document.getElementById('text');
+  // const bird1 = document.getElementById('bird1');
+  // const bike = document.getElementById('bike');
+  // const bird2 = document.getElementById('bird2');
+  // const forest = document.getElementById('forest');
+  // const btn = document.getElementById('btn');
+  // const rocks = document.getElementById('rocks');
+  // const header = document.getElementById('header');
 
-window.addEventListener('scroll', () => {
-     const value = window.scrollY;
+  // window.addEventListener('scroll', () => {
+  //     const value = window.scrollY;
 
-     text.style.marginTop = value * 1.5 + 'px';
-     bird1.style.top = value * -0.5 + 'px';
-     bird1.style.left = value -0.5 + 'px'; 
-     bike.style.left = value * 0.5 + '%'; 
-     bird2.style.top = value * -0.5 + 'px'; 
-     bird2.style.left = value * -0.05 + 'px'; 
-     btn.style.marginTop = value * 1.5 + 'px';
-     rocks.style.top = value * -0.12 + 'px';
-     forest.style.top = value * 0.25 + 'px';
-     header.style.top = value * 0.5 + 'px';
-})
+  //     text.style.marginTop = value * 1.5 + 'px';
+  //     bird1.style.top = value * -0.5 + 'px';
+  //     bird1.style.left = value -0.5 + 'px'; 
+  //     bike.style.left = value * 0.5 + '%'; 
+  //     bird2.style.top = value * -0.5 + 'px'; 
+  //     bird2.style.left = value * -0.05 + 'px'; 
+  //     btn.style.marginTop = value * 1.5 + 'px';
+  //     rocks.style.top = value * -0.12 + 'px';
+  //     forest.style.top = value * 0.25 + 'px';
+  //     header.style.top = value * 0.5 + 'px';
+  // })
 
 
+// //dark mode
+// const body = document.body;
+// const toggleThemeBtn = document.querySelector("#toggle-theme");
 
+// // Check if a theme preference is stored in local storage
+// const savedTheme = localStorage.getItem("theme");
+// if (savedTheme) {
+//   body.classList.add(savedTheme);
+// }
+
+// // Toggle between dark and light modes
+// toggleThemeBtn.addEventListener("click", () => {
+//   body.classList.toggle("dark");
+//   body.classList.toggle("light");
+
+//   // Store the current theme preference in local storage
+//   const currentTheme = body.classList.contains("dark") ? "dark" : "light";
+//   localStorage.setItem("theme", currentTheme);
+// });
 
