@@ -22,6 +22,9 @@ body{
     margin: none;
     background-color: hsla(0, 1%, 23%, 0.329);
 }
+.bckgrnd{
+    background-color: hsl(0, 23%, 97%);
+}
 
 /* =======================================  */
 /* HEADER  */
@@ -227,9 +230,6 @@ header .shopping span{
         font-size: 20vw;
         top: 130px;  
     }
-    .footercheck{
-        margin-top: 11.5%;
-     }
 }
 
 /* For Medium Devices */
@@ -265,9 +265,6 @@ header .shopping span{
         left: 93%;
         padding: 3px 10px;
     }
-    .footercheck{
-        margin-top: 39%;
-     }
 }
 
 /* For Small Devices */
@@ -303,9 +300,6 @@ header .shopping span{
         left: 91%;
         padding: 3px 10px;
     }
-    .footercheck{
-        margin-top: 19%;
-     }
 }
 /*########################################################################*/
 
@@ -476,6 +470,23 @@ body{
     background: black;
 }
 
+.footer1{
+    font-size: 12px;
+}
+
+.footer2{
+    font-size: 14px;
+}
+
+.footer2 h5{
+    font-size: 16px;
+}
+
+.about{
+    text-decoration: none;
+    color: white;
+}
+
 .rating-color{
     color: #ffae00;
 }
@@ -521,3 +532,20 @@ body{
 	background-color: var(--background-color);
 	box-shadow: 6px 6px 0 var(--background-color-dark);
 }
+
+/*dark mode###############################################*/
+
+
+.light{
+    background-color: hsla(0, 1%, 23%, 0.329);
+    
+}
+
+
+.dark{
+    background-color: black;
+    color: red;
+}
+
+
+

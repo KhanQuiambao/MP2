@@ -216,23 +216,23 @@ const subpageURL = "checkoutnew.html";
   // })
 
 
-// //dark mode
-// const body = document.body;
-// const toggleThemeBtn = document.querySelector("#toggle-theme");
+//dark mode
+const body = document.body;
+const toggleThemeBtn = document.querySelector("#darkmode");
 
-// // Check if a theme preference is stored in local storage
-// const savedTheme = localStorage.getItem("theme");
-// if (savedTheme) {
-//   body.classList.add(savedTheme);
-// }
+// Check if a theme preference is stored in local storage
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+  body.classList.add(savedTheme);
+}
 
-// // Toggle between dark and light modes
-// toggleThemeBtn.addEventListener("click", () => {
-//   body.classList.toggle("dark");
-//   body.classList.toggle("light");
+// Toggle between dark and light modes
+toggleThemeBtn.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  body.classList.toggle("light");
 
-//   // Store the current theme preference in local storage
-//   const currentTheme = body.classList.contains("dark") ? "dark" : "light";
-//   localStorage.setItem("theme", currentTheme);
-// });
+  // Store the current theme preference in local storage
+  const currentTheme = body.classList.contains("dark") ? "dark" : "light";
+  localStorage.setItem("theme", currentTheme);
+});
 
