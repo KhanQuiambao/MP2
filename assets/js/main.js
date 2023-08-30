@@ -78,7 +78,7 @@ function handle_addCartItem() {
   } else {
     itemsAdded.push(newToAdd);
   }
-  document.querySelector("#cart-count").textContent = itemsAdded.length;
+ document.querySelector("#cart-count").textContent = itemsAdded.length;
 
 
   
@@ -117,13 +117,22 @@ function handle_buyOrder() {
     alert("Your cart is empty. Add items to your cart before proceeding.");
     return;
   }
-  const cartContent = cart.querySelector(".cart-content");
-  cartContent.innerHTML = "";
-  alert("Your Order is Placed Successfully");
-  itemsAdded = [];
 
+  const cartContent = cart.querySelector(".cart-content");
+
+  if (cartContent.children.length > 0) {
+    // Only clear the cart content and display the success alert if items are present
+    cartContent.innerHTML = "";
+    alert("Your Order is Placed Successfully");
+    window.location.href = subpageURL;
+    itemsAdded = [];
+    
+  } else {
+    alert("Your cart is empty. Add items to your cart before proceeding.");
+  }
   update();
 }
+
 
 // =========== UPDATE & RERENDER FUNCTIONS =========
 function updateTotal() {
@@ -138,7 +147,7 @@ function updateTotal() {
   });
 
   // keep 2 digits after the decimal point
-  total = total.toFixed(1);
+  total = total.toFixed(2);
   // or you can use also
   // total = Math.round(total * 100) / 100;
 
@@ -167,18 +176,18 @@ function start() {
 
 const buyButton = document.querySelector(".btn-buy");
 const cartContent = document.querySelector(".cart-content");
-
-
 const subpageURL = "checkoutnew.html"; 
 
 
-buyButton.addEventListener("click", function() {
-  if (cartContent.children.length > 1) {
-    window.location.href = subpageURL;
-  } else {
-    alert("Your cart is empty. Add items to your cart before proceeding.");
-   }
-});
+// buyButton.addEventListener("click", function () {
+//   if (cartContent.children.length > 0) {
+//     // Proceed to the subpage only if the cart is not empty
+//     window.location.href = subpageURL;
+//   } else {
+//     // Display an alert if the cart is empty
+//     alert("Your cart is empty. Add items to your cart before proceeding.");
+//   }
+// });
 
 //############################################################################
 //paralax
