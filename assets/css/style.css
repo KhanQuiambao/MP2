@@ -20,7 +20,7 @@ img{
 }
 body{
     margin: none;
-    background-color: #0e0e0e;
+    background-color: hsla(0, 1%, 23%, 0.329);
 }
 
 /* =======================================  */
@@ -473,7 +473,7 @@ body{
 
 
 .footer{
-    background: rgb(20, 18, 35);
+    background: black;
 }
 
 .rating-color{
