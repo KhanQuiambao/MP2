@@ -71,7 +71,7 @@ function handle_addCartItem() {
     imgSrc,
   };
 
-  // handle item is already exist
+  
   if (itemsAdded.find((el) => el.title == newToAdd.title)) {
     alert("This Item Is Already Exist!");
     return;
@@ -81,7 +81,7 @@ function handle_addCartItem() {
   document.querySelector("#cart-count").textContent = itemsAdded.length;
 
 
-  // Add product to cart
+  
   let cartBoxElement = CartBoxComponent(title, price, imgSrc);
   let newNode = document.createElement("div");
   newNode.innerHTML = cartBoxElement;
@@ -107,7 +107,7 @@ function handle_changeItemQuantity() {
   if (isNaN(this.value) || this.value < 1) {
     this.value = 1;
   }
-  this.value = Math.floor(this.value); // to keep it integer
+  this.value = Math.floor(this.value); 
 
   update();
 }
@@ -173,14 +173,10 @@ const subpageURL = "checkoutnew.html";
 
 
 buyButton.addEventListener("click", function() {
-  // Check if the cart is not empty
-  if (cartContent.children.length > 0) {
-    // Navigate to the subpage when the cart is not empty
+  if (cartContent.children.length > 1) {
     window.location.href = subpageURL;
   } else {
-    // Handle the scenario when the cart is empty (you can show an alert or do nothing)
     alert("Your cart is empty. Add items to your cart before proceeding.");
-    // Alternatively, you can leave this empty if you don't want any action for an empty cart
    }
 });
 
