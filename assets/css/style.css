@@ -165,14 +165,14 @@ header .shopping span{
     margin: 1.5rem auto 0 auto;
     padding: 12px 20px;
     border: none;
-    background-color: var(--sec-color);
+    background-color: #bb2d3b;
     color: var(--bg-color);
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
 }
 .btn-buy:hover{
-    background-color: var(--text-color);
+    background-color: red;
 }
 #cart-close{
     position: absolute;

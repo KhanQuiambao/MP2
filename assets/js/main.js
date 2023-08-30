@@ -114,12 +114,12 @@ function handle_changeItemQuantity() {
 
 function handle_buyOrder() {
   if (itemsAdded.length <= 0) {
-    
+    alert("Your cart is empty. Add items to your cart before proceeding.");
     return;
   }
   const cartContent = cart.querySelector(".cart-content");
   cartContent.innerHTML = "";
-  alert("Your Order is Placed Successfully :)");
+  alert("Your Order is Placed Successfully");
   itemsAdded = [];
 
   update();
@@ -181,7 +181,7 @@ buyButton.addEventListener("click", function() {
     // Handle the scenario when the cart is empty (you can show an alert or do nothing)
     alert("Your cart is empty. Add items to your cart before proceeding.");
     // Alternatively, you can leave this empty if you don't want any action for an empty cart
-  }
+   }
 });
 
 //############################################################################
